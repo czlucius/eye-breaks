@@ -150,8 +150,7 @@ public class BreaksService extends Service implements View.OnTouchListener {
         @Override
         public void run() {
 
-            // Execute every second.
-            Log.i(TAG, "Timer running." + (System.nanoTime() - arbitaryStart));
+
             // If arbitraryStart = 20min, start break, and if arbitraryStart > 20min20s, reset it to System.nanoTime()
             long breakDuration = preferences.getLong(BreaksFragment.PrefConstants.BREAKS_KEY, 20_000L);
             long usageDurationNs = (long) (preferences.getLong(BreaksFragment.PrefConstants.EVERY_DURATION_KEY, 1_200_000L) * (Math.pow(10, 9)));
