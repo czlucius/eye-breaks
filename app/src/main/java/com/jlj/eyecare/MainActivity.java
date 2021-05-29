@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         if (!Settings.canDrawOverlays(this)) {
             Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
             startActivityForResult(intent, REQUEST_CODE);
-            Toast.makeText(this, getString(R.string.permission_req_string, getString(R.string.app_name)) + " and enable permissions.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, getString(R.string.permission_req_string, getString(R.string.app_name)), Toast.LENGTH_SHORT).show();
             finish(); // Stop the app, Service would not be started, as S.A.W. permission is not given
         }
 
