@@ -29,5 +29,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: my-artifact
-        path: app/build/outputs/apk/app-debug.apk
+        path: app/build/outputs/apk/*
         retention-days: 5
