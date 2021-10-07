@@ -1,6 +1,6 @@
 # eye-breaks
 App for eye breaks. 
-Info site: https://sites.google.com/view/eyebreaksapp-1389174/home
+Info site: https://sites.google.com/view/eyebreaksapp-1389174/home 
 
 Note: this branch has code modified to work with Android Marshmallow, but some components may not be working.
 
