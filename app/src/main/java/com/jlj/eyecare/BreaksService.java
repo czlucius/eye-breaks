@@ -112,7 +112,7 @@ public class BreaksService extends Service implements View.OnTouchListener {
         }
 
         Chronometer chronometer = floatingView.findViewById(R.id.durationChronometer);
-        chronometer.setCountDown(true);
+        //chronometer.setCountDown(true); Commented out for android 6 compatability
 
         floatingView.findViewById(R.id.skipBreakBtn).setOnClickListener(v -> {
             skipped = true;
